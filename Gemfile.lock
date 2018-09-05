@@ -1,0 +1,105 @@
+GIT
+  remote: https://github.com/hanami/controller.git
+  revision: 8536c9ce6bba6bf910dd82848899cc10ebdee944
+  branch: unstable
+  specs:
+    hanami-controller (2.0.0.alpha1)
+      hanami-utils (~> 2.0.alpha)
+      rack (~> 2.0)
+
+GIT
+  remote: https://github.com/hanami/router.git
+  revision: 9de6db76aab38e38b2883f06cbdc32671a8d547d
+  branch: configurable-endpoint-resolver
+  specs:
+    hanami-router (2.0.0.alpha1)
+      dry-inflector (~> 0.1)
+      hanami-utils (~> 2.0.alpha)
+      mustermann (~> 1.0)
+      mustermann-contrib (~> 1.0)
+      rack (~> 2.0)
+
+GIT
+  remote: https://github.com/hanami/utils.git
+  revision: 369d2ebe47bd12ceb100b557ab4714c2ae7fb30d
+  branch: unstable
+  specs:
+    hanami-utils (2.0.0.alpha1)
+      concurrent-ruby (~> 1.0)
+      transproc (~> 1.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    byebug (10.0.2)
+    concurrent-ruby (1.0.5)
+    dry-auto_inject (0.4.6)
+      dry-container (>= 0.3.4)
+    dry-configurable (0.7.0)
+      concurrent-ruby (~> 1.0)
+    dry-container (0.6.0)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 0.1, >= 0.1.3)
+    dry-core (0.4.7)
+      concurrent-ruby (~> 1.0)
+    dry-equalizer (0.2.1)
+    dry-events (0.1.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 0.4)
+      dry-equalizer (~> 0.2)
+    dry-inflector (0.1.2)
+    dry-logic (0.4.2)
+      dry-container (~> 0.2, >= 0.2.6)
+      dry-core (~> 0.2)
+      dry-equalizer (~> 0.2)
+    dry-monitor (0.1.2)
+      dry-configurable (~> 0.5)
+      dry-equalizer (~> 0.2)
+      dry-events (~> 0.1)
+      rouge (~> 2.0, >= 2.2.1)
+    dry-struct (0.5.1)
+      dry-core (~> 0.4, >= 0.4.3)
+      dry-equalizer (~> 0.2)
+      dry-types (~> 0.13)
+      ice_nine (~> 0.11)
+    dry-system (0.10.1)
+      concurrent-ruby (~> 1.0)
+      dry-auto_inject (>= 0.4.0)
+      dry-configurable (~> 0.7, >= 0.7.0)
+      dry-container (~> 0.6)
+      dry-core (>= 0.3.1)
+      dry-equalizer (~> 0.2)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-struct (~> 0.5)
+    dry-types (0.13.2)
+      concurrent-ruby (~> 1.0)
+      dry-container (~> 0.3)
+      dry-core (~> 0.4, >= 0.4.4)
+      dry-equalizer (~> 0.2)
+      dry-inflector (~> 0.1, >= 0.1.2)
+      dry-logic (~> 0.4, >= 0.4.2)
+    dry-web (0.8.0)
+      dry-monitor (~> 0.1)
+      dry-system (~> 0.9)
+    hansi (0.2.0)
+    ice_nine (0.11.2)
+    mustermann (1.0.3)
+    mustermann-contrib (1.0.3)
+      hansi (~> 0.2.0)
+      mustermann (= 1.0.3)
+    rack (2.0.5)
+    rouge (2.2.1)
+    transproc (1.0.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug
+  dry-web
+  hanami-controller!
+  hanami-router!
+  hanami-utils!
+
+BUNDLED WITH
+   1.16.2
