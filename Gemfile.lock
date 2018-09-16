@@ -1,7 +1,15 @@
 GIT
+  remote: https://github.com/dry-rb/dry-auto_inject.git
+  revision: 24801a539b8b229972d47ec26e699e9ff0b1c4aa
+  branch: respect-previously-defined-ivars-during-initialize
+  specs:
+    dry-auto_inject (0.4.6)
+      dry-container (>= 0.3.4)
+
+GIT
   remote: https://github.com/hanami/controller.git
-  revision: 8536c9ce6bba6bf910dd82848899cc10ebdee944
-  branch: unstable
+  revision: b226ed817d4c054ee099b74963448df0f9bc7d32
+  branch: action-new
   specs:
     hanami-controller (2.0.0.alpha1)
       hanami-utils (~> 2.0.alpha)
@@ -21,7 +29,7 @@ GIT
 
 GIT
   remote: https://github.com/hanami/utils.git
-  revision: 369d2ebe47bd12ceb100b557ab4714c2ae7fb30d
+  revision: ee41fdad0aa7c6ad9fe8b4f6a405609323bb92e4
   branch: unstable
   specs:
     hanami-utils (2.0.0.alpha1)
@@ -32,9 +40,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     byebug (10.0.2)
+    coderay (1.1.2)
     concurrent-ruby (1.0.5)
-    dry-auto_inject (0.4.6)
-      dry-container (>= 0.3.4)
     dry-configurable (0.7.0)
       concurrent-ruby (~> 1.0)
     dry-container (0.6.0)
@@ -78,17 +85,31 @@ GEM
       dry-equalizer (~> 0.2)
       dry-inflector (~> 0.1, >= 0.1.2)
       dry-logic (~> 0.4, >= 0.4.2)
+    dry-view (0.5.2)
+      dry-configurable (~> 0.1)
+      dry-core (~> 0.2)
+      dry-equalizer (~> 0.2)
+      tilt (~> 2.0)
     dry-web (0.8.0)
       dry-monitor (~> 0.1)
       dry-system (~> 0.9)
     hansi (0.2.0)
     ice_nine (0.11.2)
+    method_source (0.9.0)
     mustermann (1.0.3)
     mustermann-contrib (1.0.3)
       hansi (~> 0.2.0)
       mustermann (= 1.0.3)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
     rack (2.0.5)
     rouge (2.2.1)
+    slim (4.0.1)
+      temple (>= 0.7.6, < 0.9)
+      tilt (>= 2.0.6, < 2.1)
+    temple (0.8.0)
+    tilt (2.0.8)
     transproc (1.0.2)
 
 PLATFORMS
@@ -96,10 +117,14 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
+  dry-auto_inject!
+  dry-view
   dry-web
   hanami-controller!
   hanami-router!
   hanami-utils!
+  pry
+  slim
 
 BUNDLED WITH
    1.16.2
